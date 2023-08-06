@@ -58,7 +58,7 @@ public class SecurityController {
         user.setPassword(signupRequest.getPassword());
         userRepository.save(user);
 
-        return ResponseEntity.ok("Success");
+        return ResponseEntity.ok("User registered successfully");
     }
 
 

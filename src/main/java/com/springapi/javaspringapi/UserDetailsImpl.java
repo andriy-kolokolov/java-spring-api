@@ -3,11 +3,9 @@ package com.springapi.javaspringapi;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
-import java.util.Collections;
 
 @Data
 @AllArgsConstructor
@@ -30,7 +28,7 @@ public class UserDetailsImpl implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         // In this example, we're returning a single role "ROLE_USER".
         // You can adjust this based on your actual user roles.
-        return Collections.singleton(new SimpleGrantedAuthority("ROLE_USER"));
+        return null;
     }
 
     @Override
