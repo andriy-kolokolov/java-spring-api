@@ -13,7 +13,6 @@ This is a Java Spring API project that provides various endpoints for user authe
     - [User Login](#user-login)
     - [Secured Endpoint](#secured-endpoint)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -22,7 +21,6 @@ This is a Java Spring API project that provides various endpoints for user authe
 Before running the project, make sure you have the following installed:
 
 - Java Development Kit (JDK)
-- Spring Boot
 - Maven
 
 ### Installation
@@ -36,12 +34,8 @@ Navigate to the project directory:
 ```bash
 cd java-spring-api
 ```
-Copy code
-```bash
-cd java-spring-api
-```
+
 Build the project using Maven:
-Copy code
 ```bash
 mvn package
 ```
