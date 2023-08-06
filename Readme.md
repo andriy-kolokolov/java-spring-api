@@ -48,11 +48,11 @@ To use the API, make HTTP requests to the provided endpoints using tools like cU
 
 # API Endpoints
 
-#### User Registration
-#### Description: Register a new user with the system.
-#### URL: ```/auth/signup```
-#### Method: ```POST```
-#### Request Body:
+## User Registration
+**Description:** Register a new user with the system.<br>
+**URL:** ```/auth/signup``` <br>
+**Method:** ```POST```
+### Request Body:
 
 ```json
 {
@@ -71,11 +71,10 @@ To use the API, make HTTP requests to the provided endpoints using tools like cU
 ```
 
 ## User Login
-#### Description: Authenticate a user and get an access token.
-#### URL: ``` /auth/signin```
-#### Method: ```POST```
-#### Request Body:
-
+**Description:** Authenticate a user and get an access token.<br>
+**URL:** ``` /auth/signin```<br>
+**Method:** ```POST```
+### Request Body:
 ``` json
 {
     "username": "example_user",
@@ -83,7 +82,6 @@ To use the API, make HTTP requests to the provided endpoints using tools like cU
 }
 ```
 ### Response:
-
 ``` json
 {
     "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
@@ -92,19 +90,15 @@ To use the API, make HTTP requests to the provided endpoints using tools like cU
 ``` 
 
 ## Secured Endpoint
-#### Description: An example of a secured endpoint that requires authentication.
-
-#### URL: ```/secured/user```
-
-#### Method: ```GET```
-
-#### Request Headers:
+**Description:** An example of a secured endpoint that requires authentication.
+**URL:** ```/secured/user```<br>
+**Method:** ```GET```<br>
+### Request Headers:
 
 ``` makefile
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ``` 
-#### Response:
-
+### Response:
 ```json
 {
     "message": "Hello, example_user! This is a secured endpoint."
