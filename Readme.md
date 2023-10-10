@@ -1,4 +1,4 @@
-# Java Spring API Project
+# Java Spring API
 
 This is a Java Spring API project that provides various endpoints for user authentication and access control. It includes features for user registration, login, and secured access to specific routes.
 
